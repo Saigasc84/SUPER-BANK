@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="412dp"
+        android:layout_height="111dp"
+        android:layout_marginBottom="-13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botombarnav" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+        app:layout_constraintEnd_toEndOf="@+id/imageView32"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView32"
+        app:layout_constraintTop_toTopOf="@+id/imageView32"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homeblue" />
+
+    <ImageView
+        android:id="@+id/wallet"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="@+id/home"
+        app:srcCompat="@drawable/walletbotom" />
+
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="85dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wallet"
+        app:layout_constraintStart_toEndOf="@+id/wallet"
+        app:layout_constraintTop_toTopOf="@+id/imageView32"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/refresh" />
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wallet"
+        app:layout_constraintStart_toEndOf="@+id/refresh"
+        app:layout_constraintTop_toTopOf="@+id/wallet"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/contacsbotom" />
+
+    <ImageView
+        android:id="@+id/cards"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/contact"
+        app:layout_constraintTop_toTopOf="@+id/contact"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cardsbotom" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="412dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="-25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/topnameplate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="249dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="start"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView34"
+        app:layout_constraintEnd_toEndOf="@+id/imageView34"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView34"
+        app:layout_constraintTop_toTopOf="@+id/imageView34"
+        app:layout_constraintVertical_bias="0.631" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="411dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="-39dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView34"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/yourbalance" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="137dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="77dp"
+        android:gravity="start"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+        app:layout_constraintEnd_toEndOf="@+id/imageView35"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="@+id/imageView35"
+        app:layout_constraintTop_toTopOf="@+id/imageView35"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="410dp"
+        android:layout_height="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transactiontab" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="119dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+        app:layout_constraintEnd_toEndOf="@+id/balance"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="@+id/imageView35"
+        app:layout_constraintTop_toBottomOf="@+id/balance"
+        app:layout_constraintVertical_bias="0.966"
+        app:srcCompat="@drawable/requesticon" />
+
+
+    <ImageView
+        android:id="@+id/transfer"
+        android:layout_width="119dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+        app:layout_constraintEnd_toEndOf="@+id/balance"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView37"
+        app:layout_constraintTop_toTopOf="@+id/imageView37"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/transfericon" />
+
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="408dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView32"
+        app:layout_constraintEnd_toEndOf="@+id/imageView36"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="@+id/imageView36"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/girlcard" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

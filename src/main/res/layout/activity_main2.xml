@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="412dp"
+        android:layout_height="111dp"
+        android:layout_marginBottom="-13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/botombarnav" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView32"
+        app:layout_constraintEnd_toEndOf="@+id/imageView32"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView32"
+        app:layout_constraintTop_toTopOf="@+id/imageView32"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homebotom" />
+
+    <ImageView
+        android:id="@+id/wallet"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="@+id/home"
+        app:srcCompat="@drawable/walletbotom" />
+
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="85dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wallet"
+        app:layout_constraintStart_toEndOf="@+id/wallet"
+        app:layout_constraintTop_toTopOf="@+id/imageView32"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/refresh" />
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wallet"
+        app:layout_constraintStart_toEndOf="@+id/refresh"
+        app:layout_constraintTop_toTopOf="@+id/wallet"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/contacsbotom" />
+
+    <ImageView
+        android:id="@+id/cards"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="@+id/contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/contact"
+        app:layout_constraintTop_toTopOf="@+id/contact"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cardsbotomblue" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="412dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="-25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topnameplate" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:gravity="start"
+        android:text="Cards"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/card2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView34"
+        app:layout_constraintTop_toBottomOf="@+id/imageView34" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="249dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="start"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView34"
+        app:layout_constraintEnd_toEndOf="@+id/imageView34"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView34"
+        app:layout_constraintTop_toTopOf="@+id/imageView34"
+        app:layout_constraintVertical_bias="0.631" />
+
+    <ImageView
+        android:id="@+id/card1"
+        android:layout_width="323dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="244dp"
+        app:layout_constraintBottom_toTopOf="@+id/newcard"
+        app:layout_constraintEnd_toEndOf="@+id/card2"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="@+id/card2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView34"
+        app:srcCompat="@drawable/card1" />
+
+    <ImageView
+        android:id="@+id/card2"
+        android:layout_width="323dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/card1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView34"
+        app:srcCompat="@drawable/card2" />
+
+    <ImageView
+        android:id="@+id/newcard"
+        android:layout_width="323dp"
+        android:layout_height="162dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView32"
+        app:layout_constraintEnd_toEndOf="@+id/card1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/card1"
+        app:srcCompat="@drawable/framenewcard" />
+
+    <TextView
+        android:id="@+id/adnewcards"
+        android:layout_width="133dp"
+        android:layout_height="27dp"
+        android:gravity="start"
+        android:text="Add New Card"
+        android:textColor="#3333FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/newcard"
+        app:layout_constraintEnd_toEndOf="@+id/imageView36"
+        app:layout_constraintStart_toStartOf="@+id/imageView36"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="47dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/newcard"
+        app:layout_constraintEnd_toEndOf="@+id/newcard"
+        app:layout_constraintStart_toStartOf="@+id/newcard"
+        app:layout_constraintTop_toTopOf="@+id/newcard"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/card1text"
+        android:layout_width="249dp"
+        android:layout_height="18dp"
+        android:gravity="start"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/card2"
+        app:layout_constraintEnd_toEndOf="@+id/card2"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="@+id/card2"
+        app:layout_constraintTop_toTopOf="@+id/card2"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <TextView
+        android:id="@+id/card1text2"
+        android:layout_width="249dp"
+        android:layout_height="18dp"
+        android:gravity="start"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/card1"
+        app:layout_constraintEnd_toEndOf="@+id/card1"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="@+id/card1"
+        app:layout_constraintTop_toTopOf="@+id/card1"
+        app:layout_constraintVertical_bias="0.576" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
